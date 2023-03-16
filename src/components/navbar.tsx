@@ -2,7 +2,7 @@ import { FC } from "react";
 
 type navbarProps = {};
 
-const navbar: FC<navbarProps> = ({}) => {
+const Navbar: FC<navbarProps> = ({}) => {
   return (
     <>
       <div>navbar</div>
@@ -10,4 +10,4 @@ const navbar: FC<navbarProps> = ({}) => {
   );
 };
 
-export default navbar;
+export default Navbar;
