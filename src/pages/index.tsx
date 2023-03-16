@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import Navbar from "@/components/navbar";
+import NavigationBar from "@/components/Navbar";
 export default function Home() {
   return (
     <>
@@ -13,9 +13,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <body className="bg-indigo-400">
-        <Navbar />
-      </body>
+      <div>
+        <NavigationBar />
+        <main className="bg-gray-200 w-full h-screen">
+          <div className="max-w-7xl px-10 mx-auto flex items">Hello</div>
+        </main>
+      </div>
     </>
   );
 }
